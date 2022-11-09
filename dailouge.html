@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		/*var a=alert("you are in danger")
+		var p=Number(prompt("Enter a value")), q=Number(prompt("Enter 2nd value"))
+		console.log(typeof (p+q),typeof a)
+		var c=confirm("will you accept or not")
+		console.log(c)*/
+		try{
+			var d=435;
+			console.log(d)
+			throw "i am an error"
+		}
+		catch(err){
+			console.log("from catch block",err)
+		}
+		finally{
+			console.log("i will work always")
+		}
+	</script>
+</body>
+</html>
