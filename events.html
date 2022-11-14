@@ -1,0 +1,96 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<button onclick="demo()">submit</button>
+    <script type="text/javascript">
+	function demo(){
+		alert("danger")
+	}
+    </script>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<h1 id="event">events in javascript</h1>
+	<p id="India">I love India</p>
+	<script type="text/javascript">
+		var s=document.getElementById("event").innerHTML;
+		console.log(s)
+		var b=document.getElementById("India").innerHTML;
+		console.log(b)
+	</script>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function save(){
+		var s=document.getElementById("event").innerHTML;
+		var user=document.getElementById("user").value;
+		console.log(user)
+	}
+	</script>
+</head>
+<body>
+	<input id="user"/>
+	<h1 id="event">events in javascript</h1>
+	<p id="India">I love India</p>
+	<button onclick="save()">submit</button>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function save(){
+		var group=document.getElementsByClassName("group")
+		var list=document.getElementsByTagName("li")
+		console.log(list)
+		for(var i=0;i<group.length;i++){
+			console.log(group[i].innerHTML)
+		}
+		for(var i=0;i<list.length;i++){
+			console.log(list[i].innerHTML)
+		}
+	}
+	
+	</script>
+</head>
+<body>
+	<input id="user"/>
+	<h1 id="event" class="group">events in javascript</h1>
+	<p id="India" class="group">I love India</p>
+	<h1 class="group">Good morning</h1>
+	<p class="group">Thank you</p>
+	<h4 class="group">How are u</h4>
+	<ul>
+		<li>Ramya </li>
+		<li>God</li>
+		<li>Good</li>
+		<li>sravan</li>
+		<li>sita</li>
+		<li>Rama</li>
+		<li>react</li>
+		<li>javascript</li>
+	</ul>
+	<button onclick="save()">submit</button>
+</body>
+</html>

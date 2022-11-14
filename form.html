@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function save(){
+			var name=document.getElementById("name").value
+			console.log(name)
+			var email=document.getElementById("email").value
+			console.log(email)
+			var date=document.getElementById("date").value
+			console.log(date)			
+			var password=document.getElementById("password").value
+			console.log(password)			
+			var age=document.getElementById("age").value
+			console.log(age)			
+			var number=document.getElementById("number").value
+			console.log(number)
+		}
+	</script>
+</head>
+<body>
+	<p><input id="name" type="text" placeholder="Enter name"></p>
+	<p><input id="email" type="text" placeholder="Enter email id"></p>
+	<p><input id="date" type="date"></p>
+	<p><input id="password" type="password" placeholder="Enter password"></p>
+	<p><input id="age" type="number" placeholder="age"></p>
+	<p><input id="number" type="number" placeholder="enter mobile number"></p>
+	<button onclick="save()">submit</button>
+</body>
+</html>
