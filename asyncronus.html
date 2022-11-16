@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		/*setTimeout(()=>{
+		    consle.log("amazon")
+		},3000)
+		console.log("flipcart")
+		console.log("meeshow")
+		console.log("ajio")*/
+		/*setInterval(()=>{
+		    consle.log("amazon")
+		},500         )
+		console.log("flipcart")
+		console.log("meeshow")
+		console.log("ajio")*/
+		let promiseObj=new Promise((resolve,reject)=>{
+			var time=Math.random();
+			console.log(time)
+			if(time<.5)
+				return resolve("Data is there from server")
+			else
+				return reject("server crashed")
+		})
+		console.log(promiseObj)
+		console.log("hello")
+	</script>
+</body>
+</html>
