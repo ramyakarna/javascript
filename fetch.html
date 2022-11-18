@@ -6,7 +6,7 @@
 	<title></title>
 </head>
 <body>
-	<section id="emp" style="display: flex;"></section>
+	<!-- <section id="emp" style="display: flex;"></section>
 	    <script type="text/javascript">
 			fetch("https://reqres.in/api/users?page=2")
 			  .then((res)=>{
@@ -27,7 +27,25 @@
 	                </div>`;
 			  	}
 			  }
+	    </script> -->
+	    <script type="text/javascript">
+	    	fetch("https://reqres.in/api/users",{
+	    		method:"POST",
+	    		headers:{
+	    			"Content-Type":"application/json"
+	    		},
+	    		body:JSON.stringify({name:"ramya",age:20,gender:"female"})
+	    	})
+	    	.then((res)=>{
+	    		console.log(res)
+	    		if(res.status===201){
+	    			alert("data added successfully")
+	    		}
+	    		return res.json()
+	    	})
+	    	.then((update)=>{
+	    		console.log(update)
+	    	})
 	    </script>
-	    
 </body>
 </html>                                                                                                                                                                                                                                                                                                
